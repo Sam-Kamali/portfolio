@@ -1,0 +1,133 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  /*=======NAV  BAR=========*/
+  /* Setting some of the bases here so i can refer to them later in the code*/
+  :root {
+    --black: #1f1f1f;
+    --white: #fff;
+    /*to add a shadow to the nav bar so it looks more devided in the website*/
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    --transition: all 0.2s linear;
+  }
+  
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--black);
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  img {
+    height: 100%;
+  }
+  
+  
+  /* =========== Header =========== */
+  .logo {
+    height: 150px;
+    width: auto;
+    float: left;  
+    margin-top: 10px;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*made the navbar fixed*/
+    padding: 1rem 7%;
+    height: 8rem;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+  }
+  .header .hamburger img {
+    width: 3rem;
+  }
+  
+  .header .hamburger {
+    display: none;
+  }
+  .navbar a {
+    font-weight: 500;
+    transition: var(--transition);
+    padding: 4rem;
+    border:none;
+    font-size: 1.2rem;
+  }
+  
+  .navbar a:hover {
+    color: rgb(152, 176, 158);
+    border: none;
+  }
+  
+  /*using media queries to make the hamburger menu visible for smaller devices */
+  
+  
+  /* less than 996px, size of the logo, the padding and the margin of the nav items decreases */
+  
+  @media (max-width: 996px) {
+    .logo {
+      font-size: 3rem;
+    }
+  
+    .navbar a {
+      padding: 0.5rem;
+    }
+  
+    .navbar a:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .greenbox{
+    position: absolute; 
+    margin-top: 15rem;
+    top:-10px;
+    left: 1000px;
+    z-index: 1;
+    width:360px;
+    height: 467px;
+    border-radius: 11px;
+    background-color: rgb(129, 155, 121);
+  }
+  .picbox{
+    position: absolute; 
+    margin-top: 15rem;
+    top: 10px;
+    left: 1030px;
+    z-index: 2;
+    width:360px;
+    height: 467px;
+    border-radius: 11px;
+  }
+
+  .heading{
+    margin-top: 15rem;
+    font-family: Century Gothic Pro;
+    font-size: 40px;
+  }
+  
