@@ -81,6 +81,8 @@
     color: rgb(152, 176, 158);
     border: none;
   }
+
+  /*========PICTURE AND H1============*/
   .megreen{
     margin-top: 20px;
     margin:0 200px;
@@ -120,19 +122,21 @@
     border-radius: 11px;
     border: 1px solid rgb(68, 91, 68);
     margin: 0 35px;
+    margin-top: 30px;
     margin-bottom: 5rem;
     font-size: 20px;
     font-weight: 300;
     padding: 0 10px;
     cursor: pointer;
+     
 }
 
-
+/*========ARTWORK============*/
 .artworks {
     display:grid;
     grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
     gap: 10em;
-    padding: 2em;
+    padding: 5em;
     margin-left: 20rem;
     margin-right: 20rem;
   }
@@ -184,87 +188,254 @@
     border-radius: 117px;
   }
 
-/*========FOOTER============*/
-.greenback{
-    background-color: #BDCBBE;
-    width: 100%; 
-}
-.footercontent{
-    margin-left: 6rem;
-}
-.greenback h2{
-    font-size: 3rem;
-    top: 4rem;
-}
 
-.greenback{
-  height: 388px;
-}
-.footercontent{
-  margin-left: 14rem;
-}  
+   /*========PORTFOLIO-ILLUSTRATIONS============*/
+   .gallery {
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,3fr));
+    gap: 2em;
+    padding: 2em;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    
+  }
+  .light{
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+  }
+  .dark{
+    background-color: #253225;
+  }
+  .dark h1{
+    font-size: 30px;
+    margin-top: 20rem;
+    text-align: center;
+    color: #e6f5e6;
+  }
+  .dark p{
+    margin-top: 2rem;
+    text-align: center;
+    color: #e6f5e6;
+    font-size: 3rem;
+  }
+  .light h1{
+    font-size: 30px;
+    margin-top: 20rem;
+    text-align: center;
+    color: #88A789;
+  }
+  .light p{
+    margin-top: 2rem;
+    text-align: center;
+    color: #88A789;
+    font-size: 3rem;
+  }
+  .drawing img{
+    width:100%;
+    border-radius: 11px;
+  }
+
+
+
+
+  /*========FOOTER============*/
+  .greenback{
+      background-color: #BDCBBE;
+      width: 100%; 
+      height: 388px;
+  }
+  .greenback .leaf{
+    float: right;
+    width: auto;
+    opacity: 50%;
+    z-index: 2;
+  }
+  .greenback h2{
+      font-size: 5rem;
+      padding-top: 3rem;
+  }
+  .greenback h3{
+    padding-right: 10rem;
+    padding-top: 2rem;
+  }
+  .greenback a{
+    color: rgb(71, 71, 178);
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  .footercontent{
+    margin-left: 14rem;
+    padding-bottom: 0px;
+  }  
+
+  /*===========SOCIAL MEDIA ICONS==========*/
+  .wrapper{
+    margin-left: 11rem;
+  }
+  .wrapper .icon{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 30px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #333;
+    padding-left: 15px;
+    padding-top: 10px;
+    z-index: 2;
+  }
+  
+  .wrapper .icon:hover span{
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .facebook:hover {
+    background-color: #3b5999;
+    color: #ffffff;
+  }
+  .wrapper .twitter:hover{
+    background-color: #46c1f6;
+    color: #ffffff;
+  }
+  .wrapper .instagram:hover{
+    background-color: #e1306c;
+    color: #ffffff;
+  }
+
+
+
+
 
   /* less than 996px, size of the logo, the padding and the margin of the nav items decreases */
-  @media (max-width: 996px) {
-    .logo {
-      font-size: 1rem;
-      margin-left: -5rem;
-      margin-right: -5rem;
-    }
-  
-    .navbar a {
-      padding: 1rem;
-      margin-left: -1rem;
-    }
-  
-    .navbar a:not(:last-child) {
-      margin-right: 0.5rem;
-    }
-    .heading{
-        margin-top: 10rem;
-    }
-    .heading p{
-      font-size: 2rem;
-      padding-top: 2rem;
-    }
-    .megreen{
-      margin:0 12rem;
-    }
-    .greenbox{
-      width:240px;
-      height: 310px;
-    }
-    .picbox{
-      width:240px;
-      height: 310px;
-      margin-top: -18.5em;
-      margin-right: -1em;
-    }
-    .artworks {
-      display:grid;
-      grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
-      gap: 10em;
-      padding: 2em;
-      margin-left: 10rem;
-      margin-right: 10rem;
-    }
-    .artwork {
-      border-radius: 80px;
-    }
-    .artwork a img{
-      width:20rem;
-      height: 30rem;
-    }
-    .box img {
-      width: 350px;
-      height: 470px;
-    }
-    .box1 a img {
-      object-fit: cover;
-      border-radius: 80px;
-    }
-    
-    .greenback{
-        height: 150px;
-    }
+@media (max-width: 996px) {
+  .logo {
+    font-size: 1rem;
+    margin-left: -5rem;
+    margin-right: -5rem;
   }
+
+  .navbar a {
+    padding: 1rem;
+    margin-left: -1rem;
+  }
+
+  .navbar a:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  .heading{
+      margin-top: 10rem;
+  }
+  .heading p{
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+  .heading .btn {
+    padding-top: 2rem;
+    margin-left: -3rem;
+  }
+  .megreen{
+    margin:0 12rem;
+  }
+  .greenbox{
+    width:240px;
+    height: 310px;
+  }
+  .picbox{
+    width:240px;
+    height: 310px;
+    margin-top: -18.5em;
+    margin-right: -1em;
+  }
+  .artworks {
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 5em;
+    padding: 2em;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  .artwork {
+    border-radius: 80px;
+  }
+  .artwork a img{
+    width:20rem;
+    height: 30rem;
+  }
+  .box img {
+    width: 350px;
+    height: 470px;
+  }
+  .box1 a img {
+    object-fit: cover;
+    border-radius: 70px;
+    margin-left: 1.5rem;
+  }
+
+
+
+  
+  
+   
+
+
+
+   /*========FOOTER============*/
+  .greenback{
+    height: 20rem;
+    z-index: 0;
+  }
+  .greenback a{
+    color: rgb(71, 71, 178);
+    font-size: 1rem;
+    z-index: 2;
+  }
+  .greenback h2{
+    font-size: 2.5rem;
+    z-index: 1;
+  }
+  .greenback h3{
+    font-size: 1rem;
+    z-index: 1;
+  }
+  .footercontent{
+    margin-left: 4rem;
+  }
+  .greenback .leaf{
+    float: right;
+    width: auto;
+    opacity: 50%;
+    z-index: 2;
+  }
+   /*===========SOCIAL MEDIA ICONS MOBILE==========*/
+   .wrapper{
+    margin-left: 3rem;
+  }
+  .wrapper .icon{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 7px;
+  }
+}
+
+
+
+
+
+
+
+@media (min-width: 1476px){
+  
+  .box1 a img {
+    border-radius: 80px;
+    margin-left: 3rem;
+  }
+}
+
+
+
+
