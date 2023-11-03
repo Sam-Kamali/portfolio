@@ -1,536 +1,220 @@
+/**************************/
+/* HEADER */
+/**************************/
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-    
-  }
-  /*=======NAV  BAR=========*/
-  /* Setting some of the bases here so i can refer to them later in the code*/
-  :root {
-    --black: #1f1f1f;
-    --white: #fff;
-    /*to add a shadow to the nav bar so it looks more devided in the website*/
-    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-    --transition: all 0.2s linear;
-  }
-  
-  
-  html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'poppins', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: var(--black);
-  }
-  h2{
-    font-family: Scotch Display Fat;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  img {
-    height: 100%;
-  }
-  
-  
-  /* =========== Header =========== */
-  .logo {
-    height: 150px;
-    width: auto;
-    float: left;  
-    margin-top: 10px;
-  }
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    /*made the navbar fixed*/
-    padding: 1rem 7%;
-    height: 8rem;
-    background: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: var(--box-shadow);
-    z-index: 1000;
-  }
-  
-  .navbar a {
-    font-weight: 500;
-    transition: var(--transition);
-    padding: 4rem;
-    border:none;
-    font-size: 1.2rem;
-  }
-  
-  .navbar a:hover {
-    color: rgb(152, 176, 158);
-    border: none;
-  }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f6ff8f;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
 
-  /*========PICTURE AND H1============*/
-  .megreen{
-    margin-top: 20px;
-    margin:0 200px;
-  }
-  .greenbox{
-    z-index: 1;
-    width:360px;
-    height: 467px;
-    border-radius: 11px;
-    background-color: rgb(129, 155, 121);
-    float: right; 
-    
-  }
-  .picbox{
-    float: right;
-    z-index: 2;
-    width:360px;
-    height: 467px;
-    border-radius: 11px;
-    margin-top: 1rem;
-    margin-right: -23.5em;
-  }
-  .heading{
-    font-family: Century Gothic Pro;
-    font-size: 40px;
-    margin-left: 15rem;
-    margin-top: 14rem;
-}
-.heading p strong{
-    color: rgb(31,97,81);
-}
-.heading .btn button{
-    height: 60px;
-    width: 200px;
-    background-color:rgb(129, 155, 121) ;
-    color: white;
-    border-radius: 11px;
-    border: 1px solid rgb(68, 91, 68);
-    margin: 0 35px;
-    margin-top: 30px;
-    margin-bottom: 5rem;
-    font-size: 20px;
-    font-weight: 300;
-    padding: 0 10px;
-    cursor: pointer;
-     
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
 }
 
-/*========ARTWORK============*/
-.artworks {
-    display:grid;
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
-    gap: 10em;
-    padding: 5em;
-    margin-left: 20rem;
-    margin-right: 20rem;
-  }
-  .artwork {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-between;
-    border-radius: 117px;
-    padding: 1rem;
-    box-shadow: inset 0px 0px 40px gray;
-  }
-  .color1{
-    background-color: #E6EDFF;
-  }
-  .color2{
-    background-color: #D9F6F1;
-  }
-  .color3{
-    background-color: #F9F7C7;
-  }
-  .color4{
-    background-color: #E6DBEB;
-  }
-  
-  .artwork h2 {
-    order: 0;
-    margin: 0;
-    padding-top: 5px;
-    text-align: center;
-    
-  }
-  
-  .artwork a img{
-    width:30rem;
-    order: 1;
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    justify-content: center;
-    
-  }
-  .box img {
-    width: 350px;
-    height: 470px;
-    
-  }
-  .box1 a img {
-    object-fit: cover;
-    border-radius: 117px;
-    
-  }
-
-
-   /*========PORTFOLIO-ILLUSTRATIONS============*/
-   .gallery {
-    display:grid;
-    grid-template-columns: repeat(auto-fill,minmax(400px,3fr));
-    gap: 2em;
-    padding: 2em;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    
-  }
-  .light{
-    margin-bottom: 1rem;
-    margin-top: 5rem;
-  }
-  .dark{
-    background-color: #253225;
-  }
-  .dark h1{
-    font-size: 30px;
-    margin-top: 20rem;
-    text-align: center;
-    color: #e6f5e6;
-  }
-  .dark p{
-    margin-top: 2rem;
-    text-align: center;
-    color: #e6f5e6;
-    font-size: 3rem;
-  }
-  .light h1{
-    font-size: 30px;
-    margin-top: 20rem;
-    text-align: center;
-    color: #88A789;
-  }
-  .light p{
-    margin-top: 2rem;
-    text-align: center;
-    color: #88A789;
-    font-size: 3rem;
-  }
-  .drawing img{
-    width:100%;
-    border-radius: 11px;
-  }
-
-   /*========ABOUT ME PICTURE AND p============*/
-   .aboutgreen{
-    margin-top: 20px;
-    margin:0 200px;
-  }
-  .greenbehind{
-    z-index: 1;
-    width:360px;
-    height: 467px;
-    border-radius: 11px;
-    background-color: rgb(129, 155, 121);
-    float: left; 
-    
-  }
-  .smile{
-    float: left;
-    z-index: 2;
-    width:360px;
-    height: 467px;
-    border-radius: 11px;
-    margin-top: 1rem;
-    margin-left: -21.5em;
-    
-  }
-  .aboutme{
-    font-family: Century Gothic Pro;
-    font-size: 18px;
-    color: #88A789;
-    justify-content: center;
-    margin-left: 15rem;
-    padding-left: 50rem;
-    padding-right: 20rem;
-    margin-top: 14rem;
-    padding-top: 10rem;
-    margin-bottom: 20rem;
+.logo {
+  height: 5.5rem;
 }
 
+/**************************/
+/* NAVIGATION */
+/**************************/
 
-  /*========FOOTER============*/
-  .greenback{
-      background-color: #BDCBBE;
-      width: 100%; 
-      height: 388px;
-  }
-  .greenback .leaf{
-    float: right;
-    width: auto;
-    opacity: 50%;
-    z-index: 2;
-  }
-  .greenback h2{
-      font-size: 5rem;
-      padding-top: 3rem;
-  }
-  .greenback h3{
-    padding-right: 10rem;
-    padding-top: 2rem;
-  }
-  .greenback a{
-    color: rgb(71, 71, 178);
-    font-size: 2rem;
-    margin-bottom: 40px;
-  }
-  .footercontent{
-    margin-left: 14rem;
-    padding-bottom: 0px;
-  }  
-
-  /*===========SOCIAL MEDIA ICONS==========*/
-  .wrapper{
-    margin-left: 11rem;
-  }
-  .wrapper .icon{
-    position: relative;
-    background-color: #ffffff;
-    border-radius: 50%;
-    margin: 30px;
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    color: #333;
-    padding-left: 15px;
-    padding-top: 10px;
-    z-index: 2;
-  }
-  
-  .wrapper .icon:hover span{
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  }
-  .wrapper .facebook:hover {
-    background-color: #3b5999;
-    color: #ffffff;
-  }
-  .wrapper .twitter:hover{
-    background-color: #46c1f6;
-    color: #ffffff;
-  }
-  .wrapper .instagram:hover{
-    background-color: #e1306c;
-    color: #ffffff;
-  }
-
-
-
-
-
-  /* less than 996px, size of the logo, the padding and the margin of the nav items decreases */
-@media (max-width: 996px) {
-  .logo {
-    font-size: 1rem;
-    margin-left: -5rem;
-    margin-right: -5rem;
-  }
-
-  .navbar a {
-    padding: 1rem;
-    margin-left: -1rem;
-  }
-
-  .navbar a:not(:last-child) {
-    margin-right: 0.5rem;
-  }
-  .heading{
-      margin-top: 10rem;
-  }
-  .heading p{
-    font-size: 2rem;
-    padding-top: 2rem;
-  }
-  .heading .btn {
-    padding-top: 2rem;
-    margin-left: -3rem;
-  }
-  .megreen{
-    margin:0 12rem;
-  }
-  .greenbox{
-    width:240px;
-    height: 310px;
-  }
-  .picbox{
-    width:240px;
-    height: 310px;
-    margin-top: -18.5em;
-    margin-right: -1em;
-  }
-  .artworks {
-    display:grid;
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
-    gap: 5em;
-    padding: 2em;
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
-  .artwork {
-    border-radius: 80px;
-  }
-  .artwork a img{
-    width:20rem;
-    height: 30rem;
-  }
-  .box img {
-    width: 350px;
-    height: 470px;
-  }
-  .box1 a img {
-    object-fit: cover;
-    border-radius: 70px;
-    margin-left: 1.5rem;
-  }
-
-  /*========MOBILE ABOUT ME PICTURE AND p============*/
- 
-  .greenbehind{
-    margin-right: 12rem;
-    margin-left: -9rem;
-    width:240px;
-    height: 310px;
-    border-radius: 11px;
-  }
-  .smile{
-    width:240px;
-    height: 310px;
-    border-radius: 11px;
-    margin-top: 1rem;
-    
-  }
-  .aboutme{
-    font-size: 12px;
-    text-align: center;
-    margin-left: 1rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    margin-top: 14rem;
-    padding-top: 35rem;
-    margin-bottom: 8rem;
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
 }
 
-
-
-   /*========FOOTER============*/
-  .greenback{
-    height: 20rem;
-    z-index: 0;
-  }
-  .greenback a{
-    color: rgb(71, 71, 178);
-    font-size: 1rem;
-    z-index: 2;
-  }
-  .greenback h2{
-    font-size: 2.5rem;
-    z-index: 1;
-  }
-  .greenback h3{
-    font-size: 1rem;
-    z-index: 1;
-  }
-  .footercontent{
-    margin-left: 4rem;
-  }
-  .greenback .leaf{
-    float: right;
-    width: auto;
-    opacity: 50%;
-    z-index: 2;
-  }
-   /*===========SOCIAL MEDIA ICONS MOBILE==========*/
-   .wrapper{
-    margin-left: 3rem;
-  }
-  .wrapper .icon{
-    margin: 10px;
-    width: 30px;
-    height: 30px;
-    padding-left: 10px;
-    padding-top: 7px;
-  }
-}
- 
-/*===========ADDING DIFFERENT SETTINGS FOR THE MAIN BREAK POINTS IN DIFFERENT SCREEN==========*/
-@media (min-width: 512px){
-  .artworks {
-    gap: 10em;
-    padding: 5em;
-    margin-left: 20rem;
-    margin-right: 20rem;
-  }
-  .artwork {
-    border-radius: 100px;
-  }
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.5rem;
+  transition: all 0.3s;
 }
 
-@media only screen and (max-width: 996px) and (min-width: 700px){
-  .artworks {
-    margin-left: 27rem;
-    margin-right: 27rem;
-  }
-  .artwork {
-    border-radius: 100px;
-  }
-  .greenbox{
-    z-index: 1;
-    width:250px;
-    height: 310px;
-    border-radius: 11px;
-    background-color: rgb(129, 155, 121);
-    float: right; 
-    
-  }
-  .picbox{
-    width:250px;
-    height: 310px;
-    margin-top: 1rem;
-    margin-right: -17em;
-  }
-}
-@media (min-width: 1430px){
-  
-  .box1 a img {
-    border-radius: 80px;
-    margin-left: 1rem;
-  }
-  .greenbox{
-    margin-right: 4rem;
-  }
-  .heading{
-    margin-left: 20rem;
-  }
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: var(--light-purple);
 }
 
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: var(--light-purple);
+}
 
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: var(--dark-purple);
+}
 
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* STICKY NAVIGATION */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
+}
+
+/**************************/
+/* HOW IT WORKS SECTION */
+/**************************/
+
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  width: 60%;
+  /* height: 60%; */
+
+  /* 60% of parent's width */
+  padding-bottom: 60%;
+
+  background-color: #f3f0fb;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: var(--faded-purple);
+  z-index: -1;
+}
+
+.step-img {
+  width: 35%;
+  /* z-index: 10; */
+}
