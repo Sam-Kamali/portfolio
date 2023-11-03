@@ -4,20 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sam Kamali Portfolio</title>
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <!-- StyleSheets -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+      <!-- Scripts -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
+
+    <title>Sam Kamali Portfolio</title>
   </head>
 
   <body>
@@ -33,8 +44,7 @@
           <li>
             <a class="main-nav-link" href="#about">About Me</a>
           </li>
-          <li><a class="main-nav-link" href="#contact">Contact</a></li>
-          <li><a class="main-nav-link nav-cta" href="#cta">Resume</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Contact</a></li>
         </ul>
       </nav>
 
@@ -45,6 +55,7 @@
     </header>
 
     <main>
+      <!-- INTRODUCTION -->
       <section class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
@@ -52,39 +63,27 @@
               Step Inside My Digital Wonderland: Where Creativity Meets Tech Magic
             </h1>
             <p class="hero-description">
-              The smart 365-days-per-year food subscription that will make you
-              eat healthy again. Tailored to your personal tastes and
-              nutritional needs.
+              I’m Sam, an enthusiastic <strong>Interactive Media Designer</strong>.
+        <br />I enjoy creating user-centric, delightful, and creative
+        <br />digital products.
             </p>
-            <a href="#cta" class="btn btn--full margin-right-sm"
-              >Start eating well</a
-            >
+            <a href="#cta" class="btn btn--full margin-right-sm">Download Resume</a>
 
-            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
-            <div class="delivered-meals">
-              <div class="delivered-imgs">
-                <img src="img/customers/customer-1.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-2.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-3.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-4.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-5.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-6.jpg" alt="Customer photo" />
-              </div>
-              <p class="delivered-text">
-                <span>250,000+</span> meals delivered last year!
+            <!-- <div class="under-introductions">
+              <p class="under-intro">
+                Proven experience collaborating in teams for designing successful web apps for clients across several countries.
               </p>
-            </div>
+              <p class="under-intro">
+                Proficient in progressive compatibility & UI Engineering.
+              </p>
+            </div> -->
           </div>
           <div class="hero-img-box">
             <picture>
-              <source srcset="img/hero.webp" type="image/webp" />
-              <source srcset="img/hero-min.png" type="image/png" />
-
               <img
-                src="img/hero-min.png"
+                src="img/sam-img.png"
                 class="hero-img"
-                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-              />
+                alt="sam-kamali-image"/>
             </picture>
           </div>
         </div>
@@ -96,19 +95,9 @@
 
 
 
-    <!-- INTRODUCTION -->
     
-<!-- 
-    <section class="heading">
-      <p>
-        I’m Sam, an enthusiastic <strong>Interactive Media Designer</strong>.
-        <br />I enjoy creating user-centric, delightful, and creative
-        <br />digital products.
-      </p>
-      <div class="btn">
-        <a href="#"><button>Resume</button></a>
-      </div>
-    </section> -->
+    
+
     <!-- MY STUFF -->
 <section class="section-how" id="how">
 <div class="container grid grid--2-cols grid--center-v">
@@ -194,6 +183,22 @@
     </main> -->
 
     <footer id="contact"></footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

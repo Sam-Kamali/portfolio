@@ -170,7 +170,7 @@ body {
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
-  border-radius: 9px;
+  border-radius: 50px;
 
   /* Only necessary for .btn */
   border: none;
@@ -184,7 +184,7 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #e67e22;
+  background-color: var(--dark-purple);
   color: #fff;
 }
 
