@@ -140,6 +140,59 @@
 }
 
 /**************************/
+/* MEALS SECTION */
+/**************************/
+
+.section-mywork {
+  padding: 9.6rem 0;
+}
+
+.mywork-plan {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.mywork-plan--1 {
+  justify-self: end;
+  border: 2px solid var(--dark-purple);
+  padding: 4.6rem;
+}
+
+.mywork-plan--2 {
+  background-color: #f8f6ff;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-sing-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+.seemywork:hover,
+.seemywork:active {
+  border: 1px solid var(--dark-purple) !important;
+  background-color: white !important;
+  filter: drop-shadow(5px 5px 5px rgba(59, 11, 137, 0.6));
+}
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/**************************/
 /* HOW IT WORKS SECTION */
 /**************************/
 
@@ -169,7 +222,7 @@
 
 .step-img-box::before,
 .step-img-box::after {
-  content: "";
+  color: "";
   display: block;
   border-radius: 50%;
   position: absolute;
