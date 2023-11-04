@@ -32,6 +32,7 @@
   </head>
 
   <body>
+    <!-- <div class="curvy-line"></div> -->
     <header class="header">
       <a href="#">
         <img class="logo" alt="Omnifood logo" src="img/sam-logo.png" />
@@ -54,173 +55,163 @@
       </button>
     </header>
 
-    <main>
-      <!-- INTRODUCTION -->
-      <section class="section-hero">
-        <div class="hero">
-          <div class="hero-text-box">
-            <h1 class="heading-primary">
-              Step Inside My Digital Wonderland: Where Creativity Meets Tech Magic
-            </h1>
-            <p class="hero-description">
-              I’m Sam, an enthusiastic <strong>Interactive Media Designer</strong>.
-        <br />I enjoy creating user-centric, delightful, and creative
-        <br />digital products.
-            </p>
-            <a href="#cta" class="btn btn--full margin-right-sm">Download Resume</a>
-
-            <!-- <div class="under-introductions">
-              <p class="under-intro">
-                Proven experience collaborating in teams for designing successful web apps for clients across several countries.
+    <main class="main">
+      
+        <!-- INTRODUCTION -->
+        <section class="section-hero">
+          <div class="hero">
+            <div class="hero-text-box">
+              <h1 class="heading-primary">
+                Step Inside My Digital Wonderland: Where Creativity Meets Tech Magic
+              </h1>
+              <p class="hero-description">
+                I’m Sam, an enthusiastic <strong>Interactive Media Designer</strong>.
+          <br />I enjoy creating user-centric, delightful, and creative
+          <br />digital products.
               </p>
-              <p class="under-intro">
-                Proficient in progressive compatibility & UI Engineering.
-              </p>
-            </div> -->
-          </div>
-          <div class="hero-img-box">
-            <picture>
-              <img
-                src="img/sam-img.png"
-                class="hero-img"
-                alt="sam-kamali-image"/>
-            </picture>
-          </div>
-        </div>
-      </section>
+              <a href="#cta" class="btn btn--full margin-right-sm">Download Resume</a>
 
-      <!-- CLICKABLE -->
-      <section class="section-mywork" id="mywork">
-
-        <div class="container grid grid--2-cols margin-bottom-md">
-          <div class="mywork-plan mywork-plan--1">
-            <header class="plan-header">
-              <h3 class="heading-tertiary">
-                    I Design & <br />
-                    Develop Stuff
-              </h3>
-              <p class="step-description">
-                   Immersive web applications, breathing life into fictional characters, & excelling the art of creative manipulation.
-              </p>
-            </header>
-            
-            <div class="plan-sing-up">
-              <a href="#" class="btn btn--full seemywork">SEE MY WORK</a>
+              <!-- <div class="under-introductions">
+                <p class="under-intro">
+                  Proven experience collaborating in teams for designing successful web apps for clients across several countries.
+                </p>
+                <p class="under-intro">
+                  Proficient in progressive compatibility & UI Engineering.
+                </p>
+              </div> -->
+            </div>
+            <div class="hero-img-box">
+              <picture>
+                <img
+                  src="img/sam-img.png"
+                  class="hero-img"
+                  alt="sam-kamali-image"/>
+              </picture>
             </div>
           </div>
+        </section>
 
-          <div class="mywork-plan mywork-plan--2">
-            <header class="plan-header">
-              <h3 class="heading-tertiary">
-                    I Capture Photos & <br> Occasionally Produce Videos.
-              </h3>
-              <p class="step-description">
-                    Capturing photos, crafting occasional cinematic stories, & infusing life into visuals through motion graphics.
-              </p>
-            </header>
-            
-            <div class="plan-sing-up">
-              <a href="#" class="btn btn--full seemywork">SEE MY WORK</a>
-            </div>
-          </div>
-        </div>
+        <!-- CLICKABLE -->
+        <section class="section-mywork" id="mywork">
+          <div class="curveline">
 
-      </section>
-
-
-
-      <section class="section-cta" id="cta">
-        <div class="container">
-          <div class="cta">
-            <div class="cta-text-box">
-              <h2 class="heading-secondary title">Send me a message!</h2>
-              <p class="cta-text">
-                Do you have a question or just want to share a friendly hello? Don't hesitate to reach out!
-              </p>
-
-              <form class="cta-form" name="sign-up" netlify>
-                <div>
-                  <label for="full-name">Full Name</label>
-                  <input
-                    id="full-name"
-                    type="text"
-                    placeholder="John Smith"
-                    name="full-name"
-                    required
-                  />
+            <div class="container grid grid--2-cols margin-bottom-md">
+              <div class="mywork-plan mywork-plan--1">
+                <header class="plan-header">
+                  <h3 class="heading-tertiary lightfont">
+                        I Design & <br />
+                        Develop Stuff
+                  </h3>
+                  <p class="step-description lightfont">
+                      Immersive web applications, breathing life into fictional characters, & excelling the art of creative manipulation.
+                  </p>
+                </header>
+                
+                <div class="plan-sing-up">
+                  <a href="#" class="btn btn--full lightbtn">SEE MY WORK</a>
                 </div>
+              </div>
 
-                <div>
-                  <label for="email">Email address</label>
-                  <input
-                    id="email"
-                    type="email"
-                    placeholder="me@example.com"
-                    name="email"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label for="message">Message</label>
-                  <input
-                    id="message"
-                    type="text"
-                    placeholder="Hi, I believe we need a designer at Company X. How soon can you hop on to discuss this?"
-                    name="message"
-                    required
-                  />
-                </div>
-                <!-- <div>
-                  <label for="select-where">Where did you hear from us?</label>
-                  <select id="select-where" name="select-where" required>
-                    <option value="">Please choose one option:</option>
-                    <option value="friends">Friends and family</option>
-                    <option value="youtube">YouTube video</option>
-                    <option value="podcast">Podcast</option>
-                    <option value="ad">Facebook ad</option>
-                    <option value="others">Others</option>
-                  </select>
-                </div> -->
-
-                <button class="btn btn--form">Send</button>
-
-              </form>
-            </div>
-           
-          </div>
-        </div>
-      </section>
-   
-
-
-    <!-- MY STUFF -->
-        <section class="section-how" id="how">
-            <div class="container grid grid--2-cols grid--center-v">
-                <!-- STEP 01 -->
-                <div class="step-text-box">
-                  <p class="step-number">01</p>
+              <div class="mywork-plan mywork-plan--2">
+                <header class="plan-header">
                   <h3 class="heading-tertiary">
-                    I Design & <br />
-                    Develop stuff
+                        I Capture Photos & <br> Occasionally Produce Videos.
                   </h3>
                   <p class="step-description">
-                    Web apps, fictional characters <br />
-                  and manipulation arts.
+                        Capturing photos, crafting occasional cinematic stories, & infusing life into visuals through motion graphics.
                   </p>
+                </header>
+                
+                <div class="plan-sing-up">
+                  <a href="#" class="btn btn--full seemywork">SEE MY WORK</a>
                 </div>
-
-                <div class="step-img-box">
-                  <img
-                    src="img/app/app-screen-1.png"
-                    class="step-img"
-                    alt="iPhone app
-                  preferences selection screen"
-                  />
+              </div>
             </div>
+          </div>
         </section>
 
 
+        <!-- SEND ME A MESSAGE -->
+        <section class="section-cta" id="cta">
+          <div class="container">
+            <div class="cta">
+              <div class="cta-text-box">
+                <h2 class="heading-secondary title">Send me a message!</h2>
+                <p class="cta-text">
+                  Do you have a question or just want to share a friendly hello? Don't hesitate to reach out!
+                </p>
+
+                <form class="cta-form" name="sign-up" netlify>
+                  <div>
+                    <label for="full-name">Full Name</label>
+                    <input
+                      id="full-name"
+                      type="text"
+                      placeholder="John Smith"
+                      name="full-name"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for="email">Email address</label>
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="me@example.com"
+                      name="email"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for="message">Message</label>
+                    <input
+                      id="message"
+                      type="text"
+                      placeholder="Hi, I believe we need a designer at Company X. How soon can you hop on to discuss this?"
+                      name="message"
+                      required
+                    />
+                  </div>
+                  <button class="btn btn--form">Send</button>
+
+                </form>
+              </div>
+            
+            </div>
+          </div>
+        </section>
+    
+
+
+      <!-- MY STUFF -->
+          <section class="section-how" id="how">
+              <div class="container grid grid--2-cols grid--center-v">
+                  <!-- STEP 01 -->
+                  <div class="step-text-box">
+                    <p class="step-number">01</p>
+                    <h3 class="heading-tertiary">
+                      I Design & <br />
+                      Develop stuff
+                    </h3>
+                    <p class="step-description">
+                      Web apps, fictional characters <br />
+                    and manipulation arts.
+                    </p>
+                  </div>
+
+                  <div class="step-img-box">
+                    <img
+                      src="img/app/app-screen-1.png"
+                      class="step-img"
+                      alt="iPhone app
+                    preferences selection screen"
+                    />
+              </div>
+          </section>
+
+      </div>
     </main>
 
 

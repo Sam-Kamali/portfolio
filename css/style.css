@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f9f6ff8f;
+  background-color: #ffffff;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
 
   /* Because we want header to be sticky later */
@@ -100,7 +100,7 @@
 /**************************/
 
 .section-hero {
-  background-color: #fbf8fe;
+  background-color: #ffffff79;
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -127,24 +127,13 @@
   margin-bottom: 10em;
 }
 
-.under-introductions {
-  display: flex;
-  align-items: left;
-  gap: 1.6rem;
-  margin-top: 8rem;
-  /* margin-right: -10em; */
-}
-.under-intro {
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-
 /**************************/
-/* MEALS SECTION */
+/* MY WORK SECTION */
 /**************************/
 
 .section-mywork {
   padding: 9.6rem 0;
+  background-color: var(--dark-purple);
 }
 
 .mywork-plan {
@@ -154,8 +143,22 @@
 
 .mywork-plan--1 {
   justify-self: end;
-  border: 2px solid var(--dark-purple);
+  border: 2px solid #f8f6ff;
   padding: 4.6rem;
+}
+.lightfont {
+  color: white !important;
+}
+.lightbtn {
+  background-color: white !important;
+  color: var(--dark-purple) !important;
+}
+.lightbtn:hover,
+.lightbtn:active {
+  border: 1px solid white !important;
+  background-color: var(--dark-purple) !important;
+  filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.6)) !important;
+  color: white !important;
 }
 
 .mywork-plan--2 {
@@ -168,12 +171,6 @@
 .plan-header {
   text-align: center;
   margin-bottom: 4.8rem;
-}
-
-.plan-text {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  color: #6f6f6f;
 }
 
 .plan-sing-up {
@@ -334,5 +331,5 @@
 
 .cta *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+  box-shadow: 0 0 1rem 0.8rem rgba(237, 233, 253, 0.5);
 }

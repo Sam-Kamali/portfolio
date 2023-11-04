@@ -84,6 +84,17 @@ body {
   color: var(--black);
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
+
+  /* ADDING THE LEAF CURVE LINE */
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-image: url("../img/background-curve-liine.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 4000px;
 }
 
 /**************************/
@@ -193,7 +204,6 @@ body {
 .btn--full:active {
   background-color: var(--dark-purple);
   filter: drop-shadow(5px 5px 5px rgba(59, 11, 137, 0.6));
-  background-color: white !important;
 }
 
 .btn--outline:link,
@@ -214,7 +224,7 @@ body {
 
 .btn--form {
   background-color: var(--dark-purple);
-  color: #fdf2e9;
+  color: #efe9fd;
   align-self: end;
   padding: 1.2rem;
 }
@@ -272,6 +282,10 @@ body {
 .margin-right-sm {
   margin-right: 1.6rem !important;
   border: 2px solid #5e2ed6 !important;
+}
+.margin-right-sm:hover,
+.margin-right-sm:active {
+  background-color: white !important;
 }
 
 .margin-bottom-md {
