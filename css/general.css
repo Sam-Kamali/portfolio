@@ -94,7 +94,7 @@ body {
   background-image: url("../img/background-curve-liine.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  height: 4000px;
+  height: 700px;
 }
 
 /**************************/
@@ -163,16 +163,6 @@ body {
   text-align: left;
 }
 
-.subheading {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #cf711f;
-  text-transform: uppercase;
-  margin-bottom: 1.6rem;
-  letter-spacing: 0.75px;
-}
-
 .btn,
 .btn:link,
 .btn:visited {
@@ -220,18 +210,6 @@ body {
 
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #fffffff4;
-}
-
-.btn--form {
-  background-color: var(--dark-purple);
-  color: #efe9fd;
-  align-self: end;
-  padding: 1.2rem;
-}
-
-.btn--form:hover {
-  background-color: #fff;
-  color: #555;
 }
 
 .link:link,
