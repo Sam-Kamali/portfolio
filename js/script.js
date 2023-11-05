@@ -105,7 +105,29 @@ checkFlexGap();
 
 ///////////////////////////////////////////////////////////
 // DOWNLOADING RESUME PDF
-// function downloadResume() {
-//   var downloadLink = document.getElementById("download-link");
-//   downloadLink.click();
-// }
+
+// Get a reference to the "Download Resume" button.
+const downloadResumeButton = document.getElementById("downloadResume");
+
+// Add a click event listener to trigger the download.
+downloadResumeButton.addEventListener("click", function (event) {
+  event.preventDefault(); // Prevent the link from navigating to the PDF file.
+
+  const pdfUrl = downloadResumeButton.getAttribute("href");
+  const pdfFileName = "Sam_Kamali_Resume.pdf";
+
+  // Create an anchor element to trigger the download.
+  const a = document.createElement("a");
+  a.style.display = "none";
+  a.href = pdfUrl;
+  a.download = pdfFileName;
+
+  // Add the anchor element to the document.
+  document.body.appendChild(a);
+
+  // Trigger the click event on the anchor element to start the download.
+  a.click();
+
+  // Clean up by removing the anchor element.
+  document.body.removeChild(a);
+});
