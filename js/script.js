@@ -102,3 +102,10 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+
+///////////////////////////////////////////////////////////
+// DOWNLOADING RESUME PDF
+// function downloadResume() {
+//   var downloadLink = document.getElementById("download-link");
+//   downloadLink.click();
+// }
