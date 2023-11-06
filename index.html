@@ -145,15 +145,21 @@
                 Do you have a question or just want to share a friendly hello?
                 Don't hesitate to reach out!
               </p>
-
-              <form class="cta-form" name="sign-up" netlify>
+              <!-- CONTACT FORM -->
+              <form
+                class="cta-form"
+                name="sign-up"
+                netlify
+                action="https://formsubmit.co/itssam.kamali@gmail.com"
+                method="POST"
+              >
                 <div>
-                  <label for="full-name">Full Name</label>
+                  <label for="name">Full Name</label>
                   <input
-                    id="full-name"
+                    id="name"
                     type="text"
                     placeholder="John Smith"
-                    name="full-name"
+                    name="name"
                     required
                   />
                 </div>
@@ -179,7 +185,7 @@
                     required
                   />
                 </div>
-                <a href="#" class="btn btn--full seemywork send">SEND</a>
+                <button type="submit" class="btn">submit</button>
               </form>
             </div>
           </div>
@@ -253,6 +259,10 @@
         </nav>
       </div>
     </footer>
+    <!-- SWEET ALERT JS -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script
       type="module"

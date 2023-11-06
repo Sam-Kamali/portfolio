@@ -131,3 +131,18 @@ downloadResumeButton.addEventListener("click", function (event) {
   // Clean up by removing the anchor element.
   document.body.removeChild(a);
 });
+
+///////////////////////////////////////////////////////////
+// CONTACT FORM SUBMIT TO EMAIL
+function sendEmail() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var messageBody =
+    "Name: " +
+    name +
+    "<br/> Email Address: " +
+    email +
+    "<br/> Message: " +
+    message;
+}
