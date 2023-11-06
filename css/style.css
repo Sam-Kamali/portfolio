@@ -344,14 +344,10 @@
   max-width: 900px;
 }
 
-#full-name,
+#name,
 #email {
   width: 100%;
   max-width: 500px;
-}
-.send {
-  width: 8em;
-  display: inline-block;
 }
 
 /**************************/

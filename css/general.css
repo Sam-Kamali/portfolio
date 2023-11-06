@@ -162,7 +162,31 @@ body {
   margin-bottom: 3.2rem;
   text-align: left;
 }
+.submit {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
 
+  width: 8em;
+
+  background-color: #5e2ed6;
+  color: white;
+  align-items: left;
+}
+.submit:hover,
+.submit:active {
+  background-color: white;
+  color: var(--dark-purple);
+  filter: drop-shadow(5px 5px 5px rgba(59, 11, 137, 0.6));
+  border: 1px solid var(--dark-purple);
+}
 .btn,
 .btn:link,
 .btn:visited {
