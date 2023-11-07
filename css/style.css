@@ -523,4 +523,13 @@
   border: 1px solid var(--light-purple);
 }
 
-/* Add additional styles as needed, such as adjusting padding, fonts, and more */
+/**************************/
+/* CAROUSEL */
+/***************************/
+.carousel-inner {
+  margin: 2em;
+  padding: 10em;
+}
+.carousel-item .active img {
+  width: 2px;
+}
