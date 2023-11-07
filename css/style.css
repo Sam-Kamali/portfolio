@@ -439,13 +439,88 @@
 /******************************************************************************/
 /* WORK.HTML */
 /******************************************************************************/
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 1em;
+}
+
 .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -3em;
+  /* margin-left: 5em;
+  margin-right: 5em; */
+}
+
+.card {
+  width: 40rem;
+  margin: 10px;
+  border: 1px solid var(--dark-purple);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(70, 2, 2, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  background-color: #f7f7f7;
+  padding: 15px;
+}
+
+.card-text {
+  color: #333;
+  font-size: 14px;
+}
+
+/**************************/
+/* STICKY WORK NAV */
+/***************************/
+.work-nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--light-purple);
+  margin: 0 40em;
+  z-index: 100;
+  border-radius: 50px;
+}
+
+.work-nav-list {
+  list-style: none;
+  padding: 0.7em;
+  font-size: 1.6em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.card {
-  width: 18rem;
-  margin: 10px;
+.work-nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 50px;
 }
+
+.work-nav-link:hover,
+.work-nav-link:active {
+  background-color: var(--dark-purple);
+  border-radius: 50px;
+}
+.work-nav-link:visited {
+  text-decoration: none;
+  border: 1px solid var(--light-purple);
+}
+
+/* Add additional styles as needed, such as adjusting padding, fonts, and more */

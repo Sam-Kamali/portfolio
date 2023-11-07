@@ -346,11 +346,17 @@
   .no-flexbox-gap .main-nav-list li:not(:last-child) {
     margin-right: 3.2rem;
   }
+  .work-nav {
+    margin: 0 10em;
+  }
 }
 
 @media (max-width: 59em) {
   .no-flexbox-gap .main-nav-list li:not(:last-child) {
     margin-right: 0;
     margin-bottom: 4.8rem;
+  }
+  .work-nav {
+    margin: 0;
   }
 }
