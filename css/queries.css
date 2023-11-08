@@ -359,4 +359,14 @@
   .work-nav {
     margin: 0;
   }
+  .cta{
+    margin: 1em -5em;
+  }
+  .title {
+  font-size: 2.8em !important;
+}
+
+.cta-form {
+  margin-left: 1rem;
+}
 }
