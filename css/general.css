@@ -162,6 +162,14 @@ body {
   margin-bottom: 3.2rem;
   text-align: left;
 }
+.heading-quad{
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  text-align: left;
+  padding: 10px;
+}
 .submit {
   display: inline-block;
   text-decoration: none;

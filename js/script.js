@@ -132,3 +132,5 @@ downloadResumeButton.addEventListener("click", function (event) {
   document.body.removeChild(a);
 });
 
+///////////////////////////////////////////////////////////
+// COCKTAIL EFFECT
