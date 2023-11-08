@@ -526,10 +526,15 @@
 /**************************/
 /* CAROUSEL */
 /***************************/
-.carousel-inner {
-  margin: 2em;
-  padding: 10em;
-}
-.carousel-item .active img {
-  width: 2px;
-}
+/* Custom CSS to style the carousel */
+        #carouselExampleCaptions {
+            width: 70%; /* Adjust the width as needed */
+            margin: 0 auto; /* Center the carousel horizontally */
+            margin-top: 20px; /* Add space at the top */
+        }
+        .carousel-inner {
+            max-height: 400px; /* Limit the height of the carousel */
+        }
+        .carousel-item {
+            text-align: center; /* Center the content within the carousel items */
+        }
