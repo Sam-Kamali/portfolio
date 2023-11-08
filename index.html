@@ -136,60 +136,39 @@
 
       <!-- SEND ME A MESSAGE -->
       <section class="section-cta" id="cta">
-        <div class="container">
-          <div class="cta">
-            <div class="cta-text-box">
-              <h2 class="heading-secondary title">Send me a message!</h2>
-              <p class="cta-text">
-                Do you have a question or just want to share a friendly hello?
-                Don't hesitate to reach out!
-              </p>
-              <!-- CONTACT FORM -->
-              <form
-                class="cta-form"
-                name="sign-up"
-                netlify
-                action="https://formsubmit.co/c2920a7bcdab2e324b22ae08e01d036a"
-                method="POST"
-              >
-                <div>
-                  <label for="name">Full Name</label>
-                  <input
-                    id="name"
-                    type="text"
-                    placeholder="John Smith"
-                    name="name"
-                    required
-                  />
-                </div>
+  <div class="container">
+    <div class="cta">
+      <div class="cta-text-box">
+        <h2 class="heading-secondary title">Send me a message!</h2>
+        <p class="cta-text">
+          Do you have a question or just want to share a friendly hello? Don't hesitate to reach out!
+        </p>
+        <!-- CONTACT FORM -->
+        <form class="cta-form" name="sign-up" netlify action="https://formsubmit.co/c2920a7bcdab2e324b22ae08e01d036a" method="POST">
+          <div class="input-group">
+            <div>
+              <label for="name">Full Name</label>
+              <input id="name" type="text" placeholder="John Smith" name="name" required />
+            </div>
 
-                <div>
-                  <label for="email">Email address</label>
-                  <input
-                    id="email"
-                    type="email"
-                    placeholder="me@example.com"
-                    name="email"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label for="message">Message</label>
-                  <input
-                    id="message"
-                    type="text"
-                    placeholder="Hi, I believe we need a designer at Company X. How soon can you hop on to discuss this?"
-                    name="message"
-                    required
-                  />
-                </div>
-                <button type="submit" class="submit">SEND</button>
-              </form>
+            <div>
+              <label for="email">Email address</label>
+              <input id="email" type="email" placeholder="me@example.com" name="email" required />
             </div>
           </div>
-        </div>
-      </section>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Hi, I believe we need a designer at Company X. How soon can you hop on to discuss this?" name="message" required></textarea>
+          </div>
+
+          <button type="submit" class="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
 
     <!-- FOOTER -->
