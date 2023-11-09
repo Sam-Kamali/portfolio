@@ -2,8 +2,8 @@ console.log("Hello world!");
 
 const myName = "Sam Kamali";
 const h1 = document.querySelector(".heading-primary");
-console.log(myName);
-console.log(h1);
+// console.log(myName);
+// console.log(h1);
 
 // h1.addEventListener("click", function () {
 //   h1.textContent = myName;
@@ -17,9 +17,7 @@ const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
-///////////////////////////////////////////////////////////
-// Make mobile navigation work
-
+// Mobile navigation
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
@@ -27,61 +25,55 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-///////////////////////////////////////////////////////////
 // Smooth scrolling animation
-
-const allLinks = document.querySelectorAll("a:link");
+const allLinks = document.querySelectorAll("a");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
-    e.preventDefault();
     const href = link.getAttribute("href");
 
-    // Scroll back to top
-    if (href === "#")
+    if (href === "#") {
+      e.preventDefault();
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
-
-    // Scroll to other links
-    if (href !== "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
     }
 
-    // Close mobile naviagtion
-    if (link.classList.contains("main-nav-link"))
-      headerEl.classList.toggle("nav-open");
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      const sectionEl = document.querySelector(href);
+      if (sectionEl) {
+        sectionEl.scrollIntoView({ behavior: "smooth" });
+        headerEl.classList.remove("nav-open"); // Close mobile navigation
+      }
+    }
   });
 });
 
-///////////////////////////////////////////////////////////
 // Sticky navigation
-
 const sectionHeroEl = document.querySelector(".section-hero");
 
-const obs = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-    console.log(ent);
+if (sectionHeroEl) {
+  const obs = new IntersectionObserver(
+    function (entries) {
+      const ent = entries[0];
 
-    if (ent.isIntersecting === false) {
-      document.body.classList.add("sticky");
+      if (ent.isIntersecting === false) {
+        document.body.classList.add("sticky");
+      } else {
+        document.body.classList.remove("sticky");
+      }
+    },
+    {
+      root: null,
+      threshold: 0,
+      rootMargin: "-80px",
     }
+  );
 
-    if (ent.isIntersecting === true) {
-      document.body.classList.remove("sticky");
-    }
-  },
-  {
-    // In the viewport
-    root: null,
-    threshold: 0,
-    rootMargin: "-80px",
-  }
-);
-obs.observe(sectionHeroEl);
+  obs.observe(sectionHeroEl);
+}
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
@@ -134,57 +126,84 @@ downloadResumeButton.addEventListener("click", function (event) {
 
 ///////////////////////////////////////////////////////////
 // CAROUSEL
-function moveToSelected(element) {
-  if (element == "next") {
-    var selected = $(".selected").next();
-  } else if (element == "prev") {
-    var selected = $(".selected").prev();
-  } else {
-    var selected = element;
-  }
+// CAROUSEL
+// function moveToSelected(element) {
+//   if (element === "next") {
+//     var selected = $(".selected").next();
+//   } else if (element === "prev") {
+//     var selected = $(".selected").prev();
+//   } else {
+//     var selected = element;
+//   }
 
-  var next = $(selected).next();
-  var prev = $(selected).prev();
-  var prevSecond = $(prev).prev();
-  var nextSecond = $(next).next();
+//   var next = $(selected).next();
+//   var prev = $(selected).prev();
+//   var prevSecond = $(prev).prev();
+//   var nextSecond = $(next).next();
 
-  $(selected).removeClass().addClass("selected");
+//   $(".selected").removeClass().addClass("hideLeft");
+//   $(prev).removeClass().addClass("prev");
+//   $(next).removeClass().addClass("next");
+//   $(nextSecond).removeClass().addClass("nextRightSecond");
+//   $(prevSecond).removeClass().addClass("prevLeftSecond");
 
-  $(prev).removeClass().addClass("prev");
-  $(next).removeClass().addClass("next");
+//   setTimeout(function () {
+//     $(".hideLeft").removeClass().addClass("hideRight");
+//   }, 300);
+//   setTimeout(function () {
+//     $(".hideRight").removeClass().addClass("hide");
+//     selected.removeClass().addClass("selected");
+//   }, 500);
+// }
 
-  $(nextSecond).removeClass().addClass("nextRightSecond");
-  $(prevSecond).removeClass().addClass("prevLeftSecond");
+// // Keyboard Events
+// $(document).keydown(function (e) {
+//   switch (e.which) {
+//     case 37: // left
+//       moveToSelected("prev");
+//       break;
+//     case 39: // right
+//       moveToSelected("next");
+//       break;
+//     default:
+//       return;
+//   }
+//   e.preventDefault();
+// });
 
-  $(nextSecond).nextAll().removeClass().addClass("hideRight");
-  $(prevSecond).prevAll().removeClass().addClass("hideLeft");
+// // Click Events
+// $("#carousel div").click(function () {
+//   moveToSelected($(this));
+// });
+
+// $("#prev").click(function () {
+//   moveToSelected("prev");
+// });
+
+// $("#next").click(function () {
+//   moveToSelected("next");
+// });
+const prevButton = document.getElementById("prev");
+const nextButton = document.getElementById("next");
+const carousel = document.querySelector(".carousel");
+const images = document.querySelectorAll(".carousel img");
+
+let currentIndex = 0;
+
+nextButton.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  updateCarousel();
+});
+
+prevButton.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  updateCarousel();
+});
+
+function updateCarousel() {
+  const offset = -currentIndex * 300; // Adjust the width of the images
+
+  carousel.style.transform = `translateX(${offset}px)`;
 }
 
-// Eventos teclado
-$(document).keydown(function (e) {
-  switch (e.which) {
-    case 37: // left
-      moveToSelected("prev");
-      break;
-
-    case 39: // right
-      moveToSelected("next");
-      break;
-
-    default:
-      return;
-  }
-  e.preventDefault();
-});
-
-$("#carousel div").click(function () {
-  moveToSelected($(this));
-});
-
-$("#prev").click(function () {
-  moveToSelected("prev");
-});
-
-$("#next").click(function () {
-  moveToSelected("next");
-});
+updateCarousel();

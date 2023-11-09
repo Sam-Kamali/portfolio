@@ -545,23 +545,26 @@ textarea {
   border: 1px solid var(--light-purple);
 }
 
+/******************************************************************************/
+/* PHOTOGRAPHY.HTML */
+/******************************************************************************/
 /**************************/
 /* CAROUSEL */
 /***************************/
-#carousel {
+/* #carousel {
   position: relative;
   height: 400px;
   top: 50%;
   transform: translateY(-50%);
   overflow: hidden;
-  margin-top: 22em; /* putting space between title and carousel */
+  margin-top: 22em;
 }
 #carousel div {
   position: absolute;
   transition: transform 1s, left 1s, opacity 1s, z-index 0s;
   opacity: 1;
 }
-#carousel img {
+#carousel div img {
   width: 400px;
   transition: width 1s;
 }
@@ -626,9 +629,44 @@ textarea {
   width: 200px;
 }
 
-/* .buttons {
+.buttons {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
   bottom: 10px;
 } */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
