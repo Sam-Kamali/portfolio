@@ -551,7 +551,7 @@ textarea {
 /**************************/
 /* CAROUSEL */
 /***************************/
-/* #carousel {
+#carousel {
   position: relative;
   height: 400px;
   top: 50%;
@@ -634,42 +634,8 @@ textarea {
   left: 50%;
   transform: translateX(-50%);
   bottom: 10px;
-} */
-/* .carousel-container {
-  display: flex;
-  align-items: center;
-  position: relative;
 }
 
-.carousel {
-  display: flex;
-  overflow: hidden;
-}
-
-.carousel img {
-  width: 300px;
-  height: auto;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-} */
 
 /******************************************************************************/
 /* PHOTOGRAPHY.HTML */
