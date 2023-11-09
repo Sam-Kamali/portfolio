@@ -635,7 +635,7 @@ textarea {
   transform: translateX(-50%);
   bottom: 10px;
 } */
-.carousel-container {
+/* .carousel-container {
   display: flex;
   align-items: center;
   position: relative;
@@ -669,7 +669,7 @@ textarea {
 
 .next {
   right: 0;
-}
+} */
 
 /******************************************************************************/
 /* PHOTOGRAPHY.HTML */
