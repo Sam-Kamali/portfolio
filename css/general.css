@@ -94,7 +94,7 @@ body {
   background-image: url("../img/background-curve-liine.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  height: 700px;
+  height: auto;
 }
 
 /**************************/
@@ -162,7 +162,7 @@ body {
   margin-bottom: 3.2rem;
   text-align: left;
 }
-.heading-quad{
+.heading-quad {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.2;
