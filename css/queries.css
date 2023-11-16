@@ -369,4 +369,12 @@
 .cta-form {
   margin-left: 1rem;
 }
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0em 10em;
+  width: cover;
+  margin-bottom: -2em;
+}
 }
