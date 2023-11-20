@@ -300,6 +300,20 @@
     margin-bottom: 8em;
     padding-left: 15%;
   }
+  .photography {
+    margin-bottom: 8em;
+  }
+  /* MAKING THE CARDS IN 2 COLUMNS FOR MOBILE SCREEN */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 45%;
+    margin: 10px;
+  }
 }
 
 /* 
