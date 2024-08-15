@@ -5,7 +5,32 @@ fetch('mainsections/header.html')
       document.getElementById('header').innerHTML = data;
     });
 
+    //FETCHING UI UX DESIGN WORK
+fetch('components/uiuxdesign.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('uiux').innerHTML = data;
+    });
 
+    //FETCHING CODING WORK
+fetch('components/coding.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('coding').innerHTML = data;
+    });
+    //FETCHING DIGITAL ART WORK
+fetch('components/digital-art.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('digitalArt').innerHTML = data;
+    });
+
+//FETCHING CONTACT ME
+fetch('mainsections/contactme.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('contactme').innerHTML = data;
+    });
 
 //FETCHING FOOTER
 fetch('mainsections/footer.html')
