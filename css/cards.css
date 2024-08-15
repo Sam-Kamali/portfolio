@@ -1,0 +1,51 @@
+/* WORK.HTML */
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 1em;
+}
+.digital {
+  margin-bottom: 1.2em !important;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -3em;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.card {
+  width: 30rem;
+  margin: 10px;
+  border: 1px solid var(--dark-purple);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(70, 2, 2, 0.1);
+  transition: transform 0.3s;
+}
+.card a {
+  text-decoration: none;
+  color: rgba(59, 11, 137);
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  background-color: #f7f7f7;
+  padding: 5px;
+}
+
+.card-text {
+  color: #333;
+  font-size: 14px;
+}

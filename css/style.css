@@ -379,140 +379,123 @@ textarea {
 /* FOOTER */
 /*************************************************************************/
 
+/* General Footer Styling */
 .footer {
-  padding: 12.8rem 0;
-  /* border-top: 1px solid var(--dark-purple); */
-  background-color: var(--dark-purple);
+    background-color: #151224; /* Dark background for contrast */
+    color: #f5f5f5; /* Light text color for readability */
+    padding: 2rem 0; /* Vertical padding for spacing */
+    font-size: 1.5rem !important;
 }
 
-.grid--footer {
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 1.5rem; /* Space between grid items */
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center container */
+    padding: 0 1rem; /* Padding for responsiveness */
+    
 }
 
+/* Logo Column */
 .logo-col {
-  display: flex;
-  flex-direction: column;
+    text-align: center; /* Center align content */
 }
 
 .footer-logo {
-  display: block;
-  margin-bottom: 3.2rem;
+    display: inline-block;
+    margin-bottom: 1rem; /* Space below the logo */
+}
+
+.logo {
+    width: 80px; /* Logo size */
+    height: auto;
 }
 
 .social-links {
-  list-style: none;
-  display: flex;
-  gap: 2.4rem;
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center align items */
+    gap: 1rem; /* Space between social icons */
+    margin-bottom: 1rem; /* Space below social icons */
 }
 
 .social-icon {
-  height: 2.4rem;
-  width: 2.4rem;
+    font-size: 1.5rem; /* Size of social icons */
+    color: #f5f5f5; /* Light color for icons */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
-.copyright {
-  font-size: 1.4rem;
-  line-height: 1.6;
-  color: var(--faded-purple);
-  margin-top: auto;
+.social-icon:hover {
+    color: var(--dark-purple); /* Highlight color on hover */
+}
+
+/* Address Column */
+.address-col {
+    text-align: center; /* Center align content */
 }
 
 .footer-heading {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-bottom: 4rem;
+    font-size: 1.25rem; /* Larger font size for headings */
+    margin-bottom: 0.5rem; /* Space below headings */
+    font-weight: bold;
+    
 }
 
 .contacts {
-  font-style: normal;
-  font-size: 1.6rem;
-  line-height: 1.6;
+    font-size: 1rem; /* Regular font size */
 }
 
-.address {
-  margin-bottom: 2.4rem;
+.footer-link {
+    color: #f5f5f5; /* Light color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+    font-size: 1.5rem !important;
+}
+
+.footer-link:hover {
+    color: var(--dark-purple); /* Highlight color on hover */
+}
+
+/* Navigation Columns */
+.nav-col {
+    text-align: center; /* Center align content */
 }
 
 .footer-nav {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
+    list-style: none; /* Remove default list styling */
+    padding: 0;
 }
 
-.footer-link:link,
-.footer-link:visited {
-  text-decoration: none;
-  font-size: 1.6rem;
-  color: var(--faded-purple);
-  transition: all 0.3s;
+.footer-nav li {
+    margin-bottom: 0.5rem; /* Space between navigation items */
 }
 
-.footer-link:hover,
-.footer-link:active {
-  color: #000000;
-}
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/* WORK.HTML */
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/******************************************************************************/
-.sections {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 1em;
-}
-.digital {
-  margin-bottom: 1.2em !important;
+.footer-nav a {
+    color: #f5f5f5; /* Light color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: -3em;
-  margin-left: 5em;
-  margin-right: 5em;
+.footer-nav a:hover {
+    color: var(--dark-purple); /* Highlight color on hover */
 }
 
-.card {
-  width: 30rem;
-  margin: 10px;
-  border: 1px solid var(--dark-purple);
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(70, 2, 2, 0.1);
-  transition: transform 0.3s;
-}
-.card a {
-  text-decoration: none;
-  color: rgba(59, 11, 137);
-}
-.card:hover {
-  transform: scale(1.05);
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer .container {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    }
 }
 
-.card-img-top {
-  max-width: 100%;
-  height: auto;
-}
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
 
-.card-body {
-  background-color: #f7f7f7;
-  padding: 5px;
-}
-
-.card-text {
-  color: #333;
-  font-size: 14px;
-}
 
 /**************************/
 /* STICKY WORK NAV */

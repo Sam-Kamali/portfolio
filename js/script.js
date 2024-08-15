@@ -25,6 +25,8 @@ fetch('components/digital-art.html')
       document.getElementById('digitalArt').innerHTML = data;
     });
 
+    
+
 //FETCHING CONTACT ME
 fetch('mainsections/contactme.html')
     .then(response => response.text())

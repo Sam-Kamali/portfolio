@@ -1,0 +1,81 @@
+/* gallery.css */
+
+/* Container for the grid */
+.grid-container {
+    display: grid;
+    gap: 1.6rem; /* Consistent with .grid class in general.css */
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+    margin: 0 auto; /* Center the grid container */
+    padding: 0 1.6rem; 
+    max-width: 97rem; 
+}
+
+/* Style for each grid item */
+.grid-item {
+    position: relative;
+}
+
+/* Style for images */
+.gallery-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out;
+    border-radius: 2%;
+}
+
+/* Scale up the image on hover */
+.grid-item:hover .gallery-img {
+    transform: scale(1.1);
+   
+}
+
+/* Full-screen overlay styles */
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* Style for expanded image in overlay */
+.overlay-img {
+    max-width: 90%;
+    max-height: 80%;
+    margin: auto;
+    border-radius: 5%; /* Optional: add rounded corners */
+}
+
+/* Close button styles */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Show the overlay when an image is clicked or focused */
+.gallery-img:focus,
+.gallery-img:active {
+    outline: none; /* Remove default focus outline */
+}
+
+/* Ensure the overlay is visible when an image is clicked or focused */
+.gallery-img:focus ~ .overlay,
+.gallery-img:active ~ .overlay {
+    display: flex;
+}
+
+/* Hide the overlay when clicking outside the image or on the close button */
+.overlay:focus,
+.overlay:active {
+    display: none;
+}
