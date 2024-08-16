@@ -1,10 +1,12 @@
 /* WORK.HTML */
-
+#uiux, #coding, #digitalArt{
+  margin-top: -0.5em;
+  margin-bottom: 3em;
+}
 .sections {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 1em;
 }
 .digital {
   margin-bottom: 1.2em !important;
@@ -18,6 +20,12 @@
   margin-left: 5em;
   margin-right: 5em;
 }
+.uiux{
+  margin-top: -10em;
+}
+.coding{
+  margin-top: -6em;
+}
 
 .card {
   width: 30rem;
@@ -30,6 +38,8 @@
 .card a {
   text-decoration: none;
   color: rgba(59, 11, 137);
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 .card:hover {
   transform: scale(1.05);

@@ -263,28 +263,19 @@
 /**************************/
 
 .section-cta {
-  /* top / right / bottom / left */
-  /* padding: 9.6rem 0 12.8rem 0; */
-
-  /* top / horizontal / left */
-  /* padding: 2rem 0 12.8rem; */
-  padding: 4em 10em;
+  padding: 4em 2em;
 }
 
 .cta {
-  /* display: grid; */
-  /* 2/3 = 66.6% + 1/3 = 33.3% */
-  /* grid-template-columns: 2fr 1fr; */
-  /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(59, 11, 137, 0.4);
   border-radius: 40px;
   background-color: #cacae5a0 !important;
-  margin: 5em 10em;
+  margin: 1em 10em;
   overflow: hidden;
 }
 
 .cta-text-box {
-  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  padding: 2em;
   text-align: center;
 }
 .title {
@@ -293,7 +284,6 @@
 }
 
 .cta .heading-secondary {
-  /* color: #45260a; */
   color: inherit;
   margin-bottom: 3.2rem;
 }
@@ -305,10 +295,8 @@
 }
 
 .cta-form {
-  /* display: grid; */
   display: flex;
   text-align: left;
-  /* grid-template-columns: 1fr 1fr; */
   column-gap: 3.2rem;
   row-gap: 2.4rem;
   flex-direction: column;
@@ -333,7 +321,7 @@
   color: inherit;
   border: none;
   background-color: #ffffff;
-  border-radius: 50px;
+  border-radius: 20px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -374,6 +362,7 @@ textarea {
   height: 150px;
   resize: vertical;
 }
+
 
 /************************************************************************/
 /* FOOTER */
@@ -500,7 +489,49 @@ textarea {
 /**************************/
 /* STICKY WORK NAV */
 /***************************/
+/* Sidebar Navigation Styles */
 .work-nav {
+    position: fixed;
+    right: 0;
+    top: 33%;
+    width: 250px;
+    height: 100%;
+    overflow-y: auto; /* Enables scrolling within the sidebar */
+    z-index: 100; /* Ensures the sidebar stays on top */
+}
+
+.work-nav-list {
+    list-style-type: none;
+    /* background-color: #151224; */
+    padding: 0;
+    margin: 0;
+    padding-left: 8em;
+}
+
+.work-nav-link {
+    color: var(--dark-purple);
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    padding: 40px 20px;
+    font-size: 25px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.work-nav-link:hover {
+    color: #171135;
+    text-shadow: 2px 2px 4px rgba(11, 4, 33, 0.149);
+}
+.work-nav-link:active {
+  border: none;
+    color: var(--light-purple);
+    text-shadow: 2px 2px 4px rgba(11, 4, 33, 0.149);
+}
+
+
+
+
+/* .work-nav {
   position: sticky;
   top: 0;
   background-color: var(--light-purple);
@@ -535,7 +566,7 @@ textarea {
 .work-nav-link:visited {
   text-decoration: none;
   border: 1px solid var(--light-purple);
-}
+} */
 
 /******************************************************************************/
 /* PHOTOGRAPHY.HTML */
@@ -609,97 +640,3 @@ textarea {
 /* WORK.HTML */
 /******************************************************************************/
 /**************************/
-/* CAROUSEL */
-/***************************/
-#carousel {
-  position: relative;
-  height: 400px;
-  top: 50%;
-  transform: translateY(-50%);
-  overflow: hidden;
-}
-
-#carousel div {
-  position: absolute;
-  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
-  opacity: 1;
-}
-
-#carousel div img {
-  width: 400px;
-  transition: width 1s;
-}
-
-#carousel div.hideLeft {
-  left: 0%;
-  opacity: 0;
-  transform: translateY(50%) translateX(-50%);
-
-  img {
-    width: 200px;
-  }
-}
-
-#carousel div.hideRight {
-  left: 100%;
-  opacity: 0;
-  transform: translateY(50%) translateX(-50%);
-
-  img {
-    width: 200px;
-  }
-}
-
-#carousel div.prev {
-  z-index: 5;
-  left: 30%;
-  transform: translateY(50px) translateX(-50%);
-
-  img {
-    width: 300px;
-  }
-}
-
-#carousel div.prevLeftSecond {
-  z-index: 4;
-  left: 15%;
-  transform: translateY(50%) translateX(-50%);
-  opacity: 0.7;
-
-  img {
-    width: 200px;
-  }
-}
-
-#carousel div.selected {
-  z-index: 10;
-  left: 50%;
-  transform: translateY(0px) translateX(-50%);
-}
-
-#carousel div.next {
-  z-index: 5;
-  left: 70%;
-  transform: translateY(50px) translateX(-50%);
-
-  img {
-    width: 300px;
-  }
-}
-
-#carousel div.nextRightSecond {
-  z-index: 4;
-  left: 85%;
-  transform: translateY(50%) translateX(-50%);
-  opacity: 0.7;
-
-  img {
-    width: 200px;
-  }
-}
-.carouselmain {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
