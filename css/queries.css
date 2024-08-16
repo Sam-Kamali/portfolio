@@ -27,7 +27,9 @@
     /* 9px / 16px  */
     font-size: 56.25%;
   }
-
+.work-nav{
+  display: none;
+}
   .grid {
     column-gap: 4.8rem;
     row-gap: 6.4rem;
@@ -67,7 +69,9 @@
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
   }
-
+.work-nav{
+  display: none;
+}
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
@@ -192,7 +196,9 @@
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
   }
-
+.work-nav{
+  display: none;
+}
   .diets {
     grid-column: 1 / -1;
     justify-self: center;
@@ -230,7 +236,9 @@
   .grid {
     row-gap: 4.8rem;
   }
-
+.work-nav{
+  display: none;
+}
   .grid--2-cols,
   .grid--3-cols,
   .grid--4-cols {

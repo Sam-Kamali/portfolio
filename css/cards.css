@@ -1,7 +1,12 @@
 /* WORK.HTML */
+.work{
+  background-color: #ffffff79;
+  padding: 4.8rem 0 1.2rem 10em;
+}
 #uiux, #coding, #digitalArt{
   margin-top: -0.5em;
   margin-bottom: 3em;
+  margin-left: -10em;
 }
 .sections {
   display: flex;
@@ -19,12 +24,6 @@
   margin-top: -3em;
   margin-left: 5em;
   margin-right: 5em;
-}
-.uiux{
-  margin-top: -10em;
-}
-.coding{
-  margin-top: -6em;
 }
 
 .card {

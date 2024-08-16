@@ -1,27 +1,33 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const gridItems = document.querySelectorAll('.grid-item');
-    const overlay = document.getElementById('overlay');
-    const expandedImg = document.getElementById('expandedImg');
-    const closeBtn = document.querySelector('.close-btn');
+const images = document.querySelectorAll("gallery-img");
+const currentIndex = 0;
 
-    // Add click event listeners to each grid item
-    gridItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const imgSrc = item.querySelector('.gallery-img').src;
-            expandedImg.src = imgSrc; // Set the source of the expanded image
-            overlay.style.display = 'flex'; // Show the overlay
-        });
-    });
+function showImage(index) {
+  const enlargedImage = document.querySelector("#enlarged-image");
+  const enlargedCaption = document.querySelector("#enlarged-caption");
+  enlargedImage.src = images[index].src;
+  enlargedCaption.textContent = images[index].alt;
+  document.querySelector("#enlarged-container").style.display = "flex";
+  document.querySelector("#overlay").style.display = "block";
+  currentIndex = index;
+}
 
-    // Add click event listener to the close button
-    closeBtn.addEventListener('click', () => {
-        overlay.style.display = 'none'; // Hide the overlay
-    });
+function hideImage() {
+  document.querySelector("#enlarged-container").style.display = "none";
+  document.querySelector("#overlay").style.display = "none";
+}
 
-    // Add click event listener to the overlay (outside the image) to close it
-    overlay.addEventListener('click', (e) => {
-        if (e.target === overlay) { // Check if the click is on the overlay itself
-            overlay.style.display = 'none'; // Hide the overlay
-        }
-    });
+for ( i = 0; i < images.length; i++) {
+  images[i].addEventListener("click", function() {
+    showImage(Array.from(images).indexOf(this));
+  });
+}
+
+document.querySelector("#enlarged-container").addEventListener("click", function() {
+  hideImage();
 });
+
+document.querySelector("#overlay").addEventListener("click", function() {
+  hideImage();
+});
+
+document.addEventListener

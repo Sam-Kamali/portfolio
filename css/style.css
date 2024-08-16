@@ -364,119 +364,6 @@ textarea {
 }
 
 
-/************************************************************************/
-/* FOOTER */
-/*************************************************************************/
-
-/* General Footer Styling */
-.footer {
-    background-color: #151224; /* Dark background for contrast */
-    color: #f5f5f5; /* Light text color for readability */
-    padding: 2rem 0; /* Vertical padding for spacing */
-    font-size: 1.5rem !important;
-}
-
-.footer .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
-    gap: 1.5rem; /* Space between grid items */
-    max-width: 1200px; /* Limit maximum width */
-    margin: 0 auto; /* Center container */
-    padding: 0 1rem; /* Padding for responsiveness */
-    
-}
-
-/* Logo Column */
-.logo-col {
-    text-align: center; /* Center align content */
-}
-
-.footer-logo {
-    display: inline-block;
-    margin-bottom: 1rem; /* Space below the logo */
-}
-
-.logo {
-    width: 80px; /* Logo size */
-    height: auto;
-}
-
-.social-links {
-    list-style: none; /* Remove default list styling */
-    padding: 0;
-    display: flex; /* Flexbox for alignment */
-    justify-content: center; /* Center align items */
-    gap: 1rem; /* Space between social icons */
-    margin-bottom: 1rem; /* Space below social icons */
-}
-
-.social-icon {
-    font-size: 1.5rem; /* Size of social icons */
-    color: #f5f5f5; /* Light color for icons */
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-.social-icon:hover {
-    color: var(--dark-purple); /* Highlight color on hover */
-}
-
-/* Address Column */
-.address-col {
-    text-align: center; /* Center align content */
-}
-
-.footer-heading {
-    font-size: 1.25rem; /* Larger font size for headings */
-    margin-bottom: 0.5rem; /* Space below headings */
-    font-weight: bold;
-    
-}
-
-.contacts {
-    font-size: 1rem; /* Regular font size */
-}
-
-.footer-link {
-    color: #f5f5f5; /* Light color for links */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease; /* Smooth color transition */
-    font-size: 1.5rem !important;
-}
-
-.footer-link:hover {
-    color: var(--dark-purple); /* Highlight color on hover */
-}
-
-/* Navigation Columns */
-.nav-col {
-    text-align: center; /* Center align content */
-}
-
-.footer-nav {
-    list-style: none; /* Remove default list styling */
-    padding: 0;
-}
-
-.footer-nav li {
-    margin-bottom: 0.5rem; /* Space between navigation items */
-}
-
-.footer-nav a {
-    color: #f5f5f5; /* Light color for links */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-.footer-nav a:hover {
-    color: var(--dark-purple); /* Highlight color on hover */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .footer .container {
-        grid-template-columns: 1fr; /* Single column layout on smaller screens */
-    }
-}
 
 /******************************************************************************/
 /******************************************************************************/
@@ -573,41 +460,10 @@ textarea {
 /******************************************************************************/
 /**************************/
 
-/* Center the carousel */
-.carousel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0em 40em;
-  width: cover;
-  margin-bottom: 1em;
-}
 
-.carousel-title {
-  font-size: 2.8em;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.carousel-inner img {
-  max-width: 100%;
-  margin: 0 auto;
-  border-radius: 50px;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  opacity: 0.7;
-}
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  background-color: var(--dark-purple);
-  border-radius: 50%;
-  padding: 2.5em;
-}
 .photograph {
   margin-bottom: 0.5em !important;
+  text-align: center;
 }
 
 /******************************************************************************/
@@ -628,15 +484,123 @@ textarea {
   line-height: 1.6;
 }
 
-.about {
-  margin-bottom: -10em !important;
-}
+
 .overtheyears {
   font-size: 5em !important;
   margin-top: -0.8em;
 }
 
-/******************************************************************************/
-/* WORK.HTML */
-/******************************************************************************/
-/**************************/
+
+/************************************************************************/
+/* FOOTER */
+/*************************************************************************/
+
+/* General Footer Styling */
+.footer {
+    background-color: #151224; /* Dark background for contrast */
+    color: #f5f5f5; /* Light text color for readability */
+    padding: 2rem 0; /* Vertical padding for spacing */
+    font-size: 1.5rem !important;
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 1.5rem; /* Space between grid items */
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center container */
+    padding: 0 1rem; /* Padding for responsiveness */
+    
+}
+
+/* Logo Column */
+.logo-col {
+    text-align: center; /* Center align content */
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 1rem; /* Space below the logo */
+}
+
+.logo {
+    width: 80px; /* Logo size */
+    height: auto;
+}
+
+.social-links {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center align items */
+    gap: 1rem; /* Space between social icons */
+    margin-bottom: 1rem; /* Space below social icons */
+}
+
+.social-icon {
+    font-size: 2.5rem; /* Size of social icons */
+    color: #f5f5f5; /* Light color for icons */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-icon:hover {
+    color: var(--light-purple); /* Highlight color on hover */
+}
+
+/* Address Column */
+.address-col {
+    text-align: center; /* Center align content */
+}
+
+.footer-heading {
+    font-size: 1.25rem; /* Larger font size for headings */
+    margin-bottom: 0.5rem; /* Space below headings */
+    font-weight: bold;
+    
+}
+
+.contacts {
+    font-size: 1rem; /* Regular font size */
+}
+
+.footer-link {
+    color: #f5f5f5; /* Light color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+    font-size: 1.5rem !important;
+}
+
+.footer-link:hover {
+    color: var(--dark-purple); /* Highlight color on hover */
+}
+
+/* Navigation Columns */
+.nav-col {
+    text-align: center; /* Center align content */
+}
+
+.footer-nav {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+}
+
+.footer-nav li {
+    margin-bottom: 0.5rem; /* Space between navigation items */
+}
+
+.footer-nav a {
+    color: #f5f5f5; /* Light color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-nav a:hover {
+    color: var(--dark-purple); /* Highlight color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer .container {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    }
+}
