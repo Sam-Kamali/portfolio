@@ -1,23 +1,20 @@
 <header class="header">
-      <a href="index.html">
-        <img class="logo" alt="Sam Kamali logo" src="img/sam-logo.png" />
-      </a>
-
       <nav class="main-nav">
-        <ul class="main-nav-list">
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
           <li><a class="main-nav-link" href="index.html">Home</a></li>
-          <li>
-            <a class="main-nav-link" href="work.html">My Work</a>
-          </li>
-          <li>
-            <a class="main-nav-link" href="about.html">About Me</a>
-          </li>
-          <li><a class="main-nav-link nav-cta" href="#cta">Contact</a></li>
+          <li><a class="main-nav-link" href="work.html">My Work</a></li>
+          <li><a class="main-nav-link" href="about.html">About</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Contact Me</a></li>
+        </ul>
+        <ul class="main-nav-list">
+          <li><a href="index.html"><img class="logo" alt="Sam Kamali logo" src="img/sam-logo.png" /></a></li>
+          <li class="hideOnMobile"><a class="main-nav-link" href="index.html">Home</a></li>
+          <li class="hideOnMobile"><a class="main-nav-link" href="work.html">My Work</a></li>
+          <li class="hideOnMobile"><a class="main-nav-link" href="about.html">About</a></li>
+          <li class="hideOnMobile"><a class="main-nav-link nav-cta" href="#cta">Contact Me</a></li>
+          <li onclick=showSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
       </nav>
-
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
-    </header>
+</header>
+<script src="../js/script.js"></script>
