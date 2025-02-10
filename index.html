@@ -1,152 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="img/favicon.png" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-    <!-- <link rel="manifest" href="manifest.webmanifest" /> -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <!-- StyleSheets -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <!-- Scripts -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
-    <title>Sam Kamali Portfolio</title>
-  </head>
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  <body>
-    <!-- HEADER -->
-    <div id="header"></div>
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
-    <main class="main">
-      <!-- INTRODUCTION -->
-      <section class="section-hero">
-        <div class="hero">
-          <div class="hero-text-box">
-            <h1 class="heading-primary">
-              Step Inside My Digital Wonderland: Where Creativity Meets Tech
-              Magic
-            </h1>
-            <p class="hero-description">
-              I’m Sam, an enthusiastic
-              <strong>Interactive Media Designer</strong>. <br />I enjoy
-              creating user-centric, delightful, and creative <br />digital
-              products.
-            </p>
+    <title>Portfolio | Samaneh Kamali</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name"><img src="assets\img\sam-logo.png" width="60em"> </p>
+            <!-- <span>.</span> -->
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact Me</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
 
-            <!-- DOWNLOAD RESUME BUTTON -->
-            <a
-              href="pdf/Sam-Kamali-Resume.pdf"
-              class="btn btn--full margin-right-sm"
-              id="downloadResume"
-            >
-              Download Resume
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Samaneh Kamali</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm a <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Motivated and detail-oriented recent graduate with hands-on experience in designing accessible, and responsive digital solutions. Proficient in User Experience and Front-end technologies.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Hire Me</button>
+                <a href="assets\pdf\Samaneh-Kamali.pdf"><button class="btn">Download CV <i class="uil uil-file-alt"></i></button></a>
+            </div>
+            <div class="social_icons">
+                
+                <a href="https://www.linkedin.com/in/sam-kamali/"><div class="icon"><i class="uil uil-linkedin-alt"></i></div></a>
+                <!-- <div class="icon"><i class="uil uil-dribbble"></i></div> -->
+                <a href="https://github.com/Sam-Kamali"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="assets/img/old-file/sam-img.png" alt="samaneh-kamali-pic">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
             </a>
           </div>
-          <div class="hero-img-box">
-            <picture>
-              <img
-                src="img/old-file/sam-img.png"
-                class="hero-img"
-                alt="sam-kamali-image"
-              />
-            </picture>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
           </div>
-        </div>
-      </section>
-
-      <!-- CLICKABLE -->
-      <section class="section-mywork" id="mywork">
-        <div class="curveline">
-          <div class="container grid grid--2-cols margin-bottom-md">
-            <div class="mywork-plan mywork-plan--1">
-              <header class="plan-header">
-                <h3 class="heading-tertiary lightfont">
-                  I Design & <br />
-                  Develop Stuff
-                </h3>
-                <p class="step-description lightfont">
-                  Immersive web applications, breathing life into fictional
-                  characters, & excelling the art of creative manipulation.
-                </p>
-              </header>
-
-              <div class="plan-sing-up">
-                <a href="work.html" class="btn btn--full lightbtn"
-                  >SEE MY WORK</a
-                >
-              </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>About Me</h3>
+                    <p>I'm well-versed in creating user-friendly and visually appealing interfaces. Also skilled in HTML, CSS and JavaScript, and modern frameworks which allow me to implement interactive features.
+                       Additionally, I have experience working with content management systems (CMS) like
+                       WordPress and Shopify. I'm a fast learner and i believe skills can be learned but determination cannot.
+                    </p>
+                    <div class="about-btn">
+                        <a href="assets\pdf\Samaneh-Kamali.pdf"><button class="btn">Download CV <i class="uil uil-import"></i></button></a>
+                    </div>
+                </div>
             </div>
-
-            <div class="mywork-plan mywork-plan--2">
-              <header class="plan-header">
-                <h3 class="heading-tertiary">
-                  I Capture Photos & <br />
-                  Occasionally Produce Videos.
-                </h3>
-                <p class="step-description">
-                  Capturing photos, crafting occasional cinematic stories, &
-                  infusing life into visuals through motion graphics.
-                </p>
-              </header>
-
-              <div class="plan-sing-up">
-                <a href="photography.html" class="btn btn--full seemywork"
-                  >SEE MY WORK</a
-                >
-              </div>
+            <div class="col">
+                
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>UX UI</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Figma</span>
+                        <span>Adobe XD</span>
+                        <span>Adobe Illustrator</span>
+                        <span>Adobe Photoshop</span>
+                        <span>Maze</span>
+                        <span>Wireframing</span>
+                        <span>Prototyping</span>
+                        <span>User Research</span>
+                        <span>Usability testing</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>JavaScript</span>
+                        <span>ReactJS</span>
+                        <span>WordPress</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>English</span>
+                        <span>Persian</span>
+                        <span>French</span>
+                    </div>
+                </div>
             </div>
           </div>
-        </div>
-      </section>
+       </section>
 
-      <!-- CONTACT ME -->
-    <div id="contactme"></div>
+       <!-- -------------- PROJECT BOX ---------------- -->
+       <section class="section" id="projects"></section>
+       <div class="top-header">
+              <h1>Projects</h1>
+          </div> 
+       <div class="containerbox">
+         <div class="card__container">
+            <article class="card__article">
+               <img src="assets/img/ui-ux/karbord1.png" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">Mobile App Design</span>
+                  <h2 class="card__title">Karbord Computer Co.</h2>
+                  <a href="#" class="card__button">NDA</a>
+               </div>
+            </article>
+
+            <article class="card__article">
+               <img src="assets/img/ui-ux/House of targ.png" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">Web Re-design</span>
+                  <h2 class="card__title">House of Targ</h2>
+                  <a href="#" class="card__button">Read More</a>
+               </div>
+            </article>
+
+            <article class="card__article">
+               <img src="assets/img/ui-ux/jitto.png" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">UI Design</span>
+                  <h2 class="card__title">Jitto</h2>
+                  <a href="#" class="card__button">Read More</a>
+               </div>
+            </article>
+
+            <article class="card__article">
+               <img src="assets/img/code/snap.PNG" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">Web Design</span>
+                  <h2 class="card__title">College Project</h2>
+                  <a href="#" class="card__button">Read More</a>
+               </div>
+            </article>
+
+            <article class="card__article">
+               <img src="assets/img/code/Pizza.PNG" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">Pizza topping</span>
+                  <h2 class="card__title">College Project</h2>
+                  <a href="#" class="card__button">Read More</a>
+               </div>
+            </article>
+
+            <article class="card__article">
+               <img src="assets/img/code/rocket-1.PNG" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">Moving Rocket</span>
+                  <h2 class="card__title">College Project</h2>
+                  <a href="#" class="card__button">Read More</a>
+               </div>
+            </article>
+         </div>
+      </div>
+
+       <!-- <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <i class="uil uil-briefcase-alt"></i>
+                <h3>Completed</h3>
+                <label>15+ Finished Projects</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-users-alt"></i>
+                <h3>Clients</h3>
+                <label>25+ Happy Clients</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-award"></i>
+                <h3>Experience</h3>
+                <label>7+ Years in the field</label>
+            </div>
+          </div>
+       </section> -->
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a question or just want to share a friendly hello? Don't hesitate to reach out!</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Contact Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: sam76kam@gmail.com</p>
+                    <!-- <p><i class="uil uil-phone"></i> Tel: +250 708 770 000</p> -->
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <div class="input-group">
+                            <input type="hidden" name="access_key" value="3dd624c9-4c81-47e5-b647-02f119b4016a">
+                            <div>
+                            <div class="form-inputs">
+                                <label for="name"></label>
+                                <input id="name" type="text" placeholder="John Smith" class="input-field" name="name" required/>
+                                <label for="email"></label>
+                                <input id="email" type="text" class="input-field" name="email" placeholder="Email" required />
+                            </div>
+                            <div class="text-area">
+                            <textarea id="text" type="text" name="text" required placeholder="Message"></textarea>
+                        </div>
+                    <div class="form-button">
+                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                    </form>
+                    <!-- <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Name">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    </div> -->
+                </div>
+             </div>
+          </div>
+       </section>
+
     </main>
 
-    <!-- FOOTER -->
-    <div id="footer"></div>
-    <!-- SWEET ALERT JS -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>.Samaneh Kamali.</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            
+                <a href="https://www.linkedin.com/in/sam-kamali/"><div class="icon"><i class="uil uil-linkedin-alt"></i></div></a>
+                <!-- <div class="icon"><i class="uil uil-dribbble"></i></div> -->
+                <a href="https://github.com/Sam-Kamali"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Samaneh Kamali</a> - All rights reserved</p>
+        </div>
+    </footer>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-    ></script>
+    </div>
 
-    <script
-      defer
-      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
-    ></script>
-    <script defer src="js/script.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  </body>
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
