@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+        <title>Portfolio | House of Targ</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f9f9f9;
+            }
+            .container-projects {
+                width: 70%;
+                margin: auto;
+                margin-top: 30px;
+                padding: 20px;
+                background: #fff;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                position: relative;
+            }
+            h1, h2 {
+                color: #333;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            p {
+                padding: 10px 80px 40px 20px; /*top right bottom left*/
+            }
+            ul, li{
+                margin: 0px 100px 1px 20px; /*top right bottom left*/
+            }
+            section {
+                margin-bottom: 30px;
+            }
+            img {
+                width: 100%;
+                max-width: 600px;
+                display: block;
+                margin: 0% 20% 5% 20%;
+                border-radius: 8px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .back-button {
+                position: fixed;
+                top: 20px;
+                left: 15px;
+                background-color: #5e2fd7;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 50px;
+                text-decoration: none;
+                font-size: 16px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-color 0.3s ease;
+            }
+            .back-button:hover {
+                background-color: #220f52;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="/index.html" class="back-button">Back</a>
+        <div class="container-projects">
+            <h1>Project Title: Interactive Website</h1>
+            <p>This project is a restaurant website built using <strong> HTML, CSS, JavaScript, and jQuery</strong>. I followed a tutorial to create it and added interactive features using jQuery and the Waypoints library. Below is a breakdown of the key functionalities and how they work.</p>
+            <a href="https://sam-kamali.github.io/Omnifood/"><img src="/assets/img/code/Omnifood.PNG" alt="User Research" /></a>
+
+            <!-- ------------- Sticky Navigation exp ------------>
+            <section>
+                <h2>1. Sticky Navigation</h2>
+                <p>The navigation bar becomes sticky when the user scrolls past the "Features" section.
+                The following code adds a .sticky class to the < nav > when scrolling down and removes it when scrolling up:</p>
+                <ul>
+                    <li><strong>Interesting Part: </strong> offset: '60px' ensures that the sticky effect triggers before reaching the section.</li>
+                </ul>
+                <img src="/assets/img/code/omnifood-code1.PNG" alt="omnifood" />
+            </section>
+
+            <!-- ------------- Smooth Scrolling on Buttons exp ------------>
+             <section>
+                <h2>2. Smooth Scrolling on Buttons</h2>
+                <p>Clicking on certain buttons scrolls smoothly to specific sections of the page:</p>
+                <ul>
+                    <li> <strong> Interesting Part:</strong> The animate() function ensures a smooth transition instead of jumping to the section instantly.</li>
+                </ul>
+                <img src="/assets/img/code/omnifood-code2.PNG" alt="omnifood" />
+            </section>
+            
+            <!-- ------------- Navigation Scrolling (Anchor Links) exp------------>
+            <section>
+                <h2>3. Navigation Scrolling (Anchor Links)</h2>
+                <p>This allows smooth scrolling when clicking on navigation menu links:</p>
+                <ul>
+                    <li><strong>Interesting Part:</strong>  The script prevents default anchor link behavior (return false;) and smoothly animates the page scroll.</li>
+                </ul>
+                <p>Testing with a small user group helped refine the <strong>navigation structure</strong> before moving to high-fidelity prototyping.</p>
+
+                <img src="/assets/img/code/omnifood-code3.PNG" alt="omnifood" />
+            </section>
+
+            <!-- ------------- Animations on Scroll exp ------------>
+            <section>
+                <h2>4. Animations on Scroll</h2>
+                <p>Different elements animate when they come into view using the Waypoints library and Animate.css:</p>
+                <ul>
+                    <li><strong>Interesting Part:</strong>The offset: '50%' ensures animations trigger when the section is halfway visible.</li>
+                </ul>
+                <img src="/assets/img/code/omnifood-code4.PNG" alt="omnifood" />
+            </section>
+            <!-- ------------- Mobile Navigation (Hamburger Menu) expl ------------>
+            <section>
+                <h2>5. Mobile Navigation (Hamburger Menu)</h2>
+                <p>Clicking the menu icon toggles the mobile navigation:</p>
+                <ul>
+                    <li><strong>Interesting Part:</strong>The script dynamically changes the icon from a menu (ion-navicon-round) to a close button (ion-close-round).</li>
+                </ul>
+                <img src="/assets/img/code/omnifood-code5.PNG" alt="omnifood" />
+            </section>
+
+            <!-- ------------- Conclusion ------------>
+            <section>
+                <h2>Conclusion</h2>
+                <ul>
+                    <li>This project helped me understand <strong> jQuery, smooth scrolling, waypoints</strong>, and <strong> animations on scroll.</strong> </li>
+                    <li>Following a tutorial made it easier to learn, but I also customized and improved certain parts, like refining animations and navigation behavior.</li>
+                    <li>Overall, it's a well-structured and functional interactive website for a restaurant!</li>
+                </ul>
+            </section>
+        </div>
+        
+
+
+
+
+
+        <!-- --------------- FOOTER --------------- -->
+    <footer>
+            <div class="top-footer">
+                <p>.Samaneh Kamali.</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <a href="https://www.linkedin.com/in/sam-kamali/"><div class="icon"><i class="uil uil-linkedin-alt"></i></div></a>
+                <a href="https://github.com/Sam-Kamali"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Samaneh Kamali</a> - All rights reserved</p>
+            </div>
+        </footer>
+
+
+    </body>
+</html>
