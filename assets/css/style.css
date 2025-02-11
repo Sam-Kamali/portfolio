@@ -798,9 +798,6 @@ footer{
 
 
 
-
-
-
 /* Carousel container */
 .carousel-container {
     position: relative;
@@ -824,9 +821,7 @@ footer{
     border-radius: 60px;
     
 }
-.carousel img{
-    
-}
+
 
 .carousel-indicators {
     position:relative;

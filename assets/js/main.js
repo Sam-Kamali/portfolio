@@ -160,3 +160,4 @@ document.addEventListener('DOMContentLoaded', () => {
     //     document.querySelector('.carousel').style.transform = `translateX(-${100 * currentIndex}%)`;
     // }, 6000); // Change every 6 seconds
 });
+
