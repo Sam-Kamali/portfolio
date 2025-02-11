@@ -115,3 +115,48 @@
   }
 
   window.addEventListener('scroll', scrollActive)
+
+
+
+
+
+  
+
+
+
+  // JavaScript to manage carousel behavior
+document.addEventListener('DOMContentLoaded', () => {
+    const indicators = document.querySelectorAll('.indicator');
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    
+    function setActiveIndicator(index) {
+        indicators.forEach((indicator, i) => {
+            if (i === index) {
+                indicator.classList.add('active');
+            } else {
+                indicator.classList.remove('active');
+            }
+        });
+    }
+
+    // Track the index of the current image
+    let currentIndex = 0;
+    setActiveIndicator(currentIndex);
+
+    // Change image based on indicator click
+    indicators.forEach((indicator) => {
+        indicator.addEventListener('click', (e) => {
+            const index = parseInt(e.target.getAttribute('data-index'), 10);
+            currentIndex = index;
+            setActiveIndicator(index);
+            document.querySelector('.carousel').style.transform = `translateX(-${100 * currentIndex}%)`;
+        });
+    });
+
+    // // For auto sliding (optional)
+    // setInterval(() => {
+    //     currentIndex = (currentIndex + 1) % carouselItems.length;
+    //     setActiveIndicator(currentIndex);
+    //     document.querySelector('.carousel').style.transform = `translateX(-${100 * currentIndex}%)`;
+    // }, 6000); // Change every 6 seconds
+});
